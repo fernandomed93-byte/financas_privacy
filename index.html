@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Finanças</title>
+<meta name="description" content="Política de Privacidade do aplicativo Finanças (controle financeiro pessoal e familiar).">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --text: #1f2430;
+    --muted: #5b6472;
+    --line: #e2e5ea;
+    --accent: #2f6f5e;
+    --accent-soft: #eaf3f0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151a;
+      --card: #191d24;
+      --text: #e6e9ee;
+      --muted: #a2abba;
+      --line: #2a303a;
+      --accent: #6fd0b4;
+      --accent-soft: #1d2a27;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 32px 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 32px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+    margin: 0 0 4px;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    margin: 32px 0 8px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin: 20px 0 6px;
+  }
+
+  p, li { margin: 8px 0; }
+  ul { padding-left: 22px; }
+  li > ul { margin-top: 4px; }
+
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 24px;
+  }
+
+  .resumo {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 24px 0;
+  }
+
+  .resumo h2 {
+    border: 0;
+    margin: 0 0 8px;
+    padding: 0;
+    font-size: 1.05rem;
+  }
+
+  .resumo ul { margin: 0; }
+
+  a { color: var(--accent); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 0.95rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    vertical-align: top;
+  }
+
+  th { background: var(--accent-soft); font-weight: 600; }
+
+  .nao-coletamos td:first-child { white-space: nowrap; }
+
+  footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 520px) {
+    body { padding: 16px 8px 40px; }
+    main { padding: 20px; border-radius: 12px; }
+    table, thead, tbody, th, td, tr { display: block; }
+    thead { display: none; }
+    td { border-top: 0; }
+    td:first-child { border-top: 1px solid var(--line); font-weight: 600; }
+  }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    main { border: 0; border-radius: 0; padding: 0; }
+    h2 { break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+<main id="top">
+  <h1>Política de Privacidade — Finanças</h1>
+  <p class="meta">
+    Aplicativo <strong>Finanças</strong> (Android) &middot; Última atualização: 19 de novembro de 2026
+  </p>
+
+  <p>
+    Esta política explica quais dados o aplicativo <strong>Finanças</strong> coleta, por quê,
+    onde eles ficam armazenados e como você pode acessá-los, corrigi-los ou excluí-los.
+    Ela vale para o aplicativo distribuído pela Google Play.
+  </p>
+
+  <div class="resumo">
+    <h2>Resumo</h2>
+    <ul>
+      <li>O app serve para organizar as finanças de uma pessoa ou família. Os dados que você
+        cadastra são seus.</li>
+      <li>Não vendemos, não alugamos e não usamos seus dados para publicidade.</li>
+      <li>Não coletamos localização, contatos, SMS, microfone, câmera nem identificador de
+        publicidade. Não há ferramentas de análise de comportamento nem rastreadores.</li>
+      <li>Os dados ficam no seu aparelho e, quando a sincronização está habilitada na sua conta,
+        também em um servidor (Supabase, hospedado nos Estados Unidos).</li>
+      <li>Você pode excluir sua conta e seus dados a qualquer momento — veja a
+        seção <a href="#exclusao">Retenção e exclusão</a>.</li>
+    </ul>
+  </div>
+
+  <h2>1. Quem é o responsável</h2>
+  <p>
+    O controlador dos dados pessoais tratados pelo aplicativo é
+    <strong>Fernando Medeiros</strong>, pessoa física, responsável pelo app Finanças.
+    Contato para qualquer assunto de privacidade:
+    <a href="mailto:fernandomed93@gmail.com">fernandomed93@gmail.com</a>.
+  </p>
+
+  <h2>2. Dados que coletamos</h2>
+
+  <h3>2.1 Conta e identificação</h3>
+  <ul>
+    <li><strong>Nome</strong> informado no cadastro.</li>
+    <li><strong>E-mail</strong>, usado para login, confirmação de conta e recuperação de senha.</li>
+    <li><strong>Senha</strong>: não temos acesso à sua senha. O serviço de autenticação guarda
+      apenas um hash (representação criptográfica) dela.</li>
+  </ul>
+
+  <h3>2.2 Perfil</h3>
+  <ul>
+    <li><strong>Foto de perfil</strong> (opcional), escolhida por você na galeria do aparelho.
+      Se você não enviar uma foto, o app usa as iniciais do seu nome.</li>
+    <li><strong>Preferências do app</strong>: cor do tema, cartões exibidos na tela inicial e
+      conta/cartão padrão.</li>
+  </ul>
+
+  <h3>2.3 Conteúdo financeiro que você cadastra</h3>
+  <p>
+    Contas, cartões e faturas, categorias, lançamentos de receitas e despesas, recorrências,
+    projetos e reservas, listas de mercado e itens de catálogo. Esses dados descrevem a sua
+    situação financeira e são tratados apenas para prestar o serviço a você.
+  </p>
+
+  <h3>2.4 Uso compartilhado (domínio familiar)</h3>
+  <p>
+    O app permite que uma conta convide outras pessoas para acessar o mesmo conjunto de dados
+    (por exemplo, um casal ou uma família). Nesse caso:
+  </p>
+  <ul>
+    <li>o <strong>e-mail do convidado</strong> é gravado para enviar e controlar o convite;</li>
+    <li>quem participa do domínio vê os dados financeiros daquele domínio e o nome, e-mail e
+      foto de perfil do dono;</li>
+    <li>o dono do domínio pode remover o acesso de um convidado a qualquer momento.</li>
+  </ul>
+  <p>Não compartilhe um domínio com quem você não queira que veja esses dados.</p>
+
+  <h3>2.5 Dados no seu aparelho</h3>
+  <p>
+    O app funciona offline: os dados ficam em um banco de dados local (SQLite) e as imagens de
+    perfil em uma pasta privada do aplicativo. Esses arquivos são apagados quando você desinstala
+    o app ou limpa os dados do aplicativo nas configurações do Android.
+  </p>
+
+  <h3>2.6 O que não coletamos</h3>
+  <table class="nao-coletamos">
+    <tbody>
+      <tr>
+        <td>Localização</td>
+        <td>Nenhum acesso ao GPS ou à localização aproximada.</td>
+      </tr>
+      <tr>
+        <td>Contatos e agenda</td>
+        <td>Nenhum acesso à sua lista de contatos, calendário ou histórico de chamadas.</td>
+      </tr>
+      <tr>
+        <td>SMS e telefone</td>
+        <td>O app não lê mensagens e não pede o número de telefone.</td>
+      </tr>
+      <tr>
+        <td>Câmera e microfone</td>
+        <td>A foto de perfil vem da galeria, escolhida por você. Não há acesso à câmera nem ao
+          microfone.</td>
+      </tr>
+      <tr>
+        <td>Publicidade</td>
+        <td>Sem anúncios, sem identificador de publicidade e sem rastreamento entre apps.</td>
+      </tr>
+      <tr>
+        <td>Análise de uso</td>
+        <td>Sem SDKs de analytics, crash reporting ou rastreamento de terceiros.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. Para que usamos os dados</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Finalidade</th>
+        <th>Dados envolvidos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Criar e manter sua conta, autenticar o acesso e permitir a recuperação de senha</td>
+        <td>Nome, e-mail, senha (hash)</td>
+      </tr>
+      <tr>
+        <td>Exibir suas finanças, calcular saldos, faturas, gráficos e recorrências</td>
+        <td>Conteúdo financeiro, preferências</td>
+      </tr>
+      <tr>
+        <td>Sincronizar seus dados entre aparelhos e permitir o uso compartilhado do domínio</td>
+        <td>Conteúdo financeiro, perfil, e-mail de convidados</td>
+      </tr>
+      <tr>
+        <td>Enviar notificações sobre lançamentos e lembretes</td>
+        <td>Conteúdo financeiro, processado no próprio aparelho</td>
+      </tr>
+      <tr>
+        <td>Segurança, prevenção a fraude e suporte</td>
+        <td>Registros técnicos de acesso do provedor de infraestrutura</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    As bases legais (LGPD, Lei 13.709/2018) são a <strong>execução do contrato</strong> com você
+    (art. 7º, V) para as finalidades do serviço, o <strong>cumprimento de obrigação legal</strong>
+    (art. 7º, II) quando aplicável e o <strong>consentimento</strong> (art. 7º, I) para o envio da
+    foto de perfil e das notificações — ambos opcionais e revogáveis a qualquer momento.
+  </p>
+
+  <h2>4. Com quem compartilhamos</h2>
+  <p>Não vendemos nem cedemos seus dados. Usamos apenas os prestadores necessários ao serviço:</p>
+  <ul>
+    <li><strong>Supabase</strong> — banco de dados, autenticação e armazenamento de arquivos.
+      Atua como operador, seguindo nossas instruções e as nossas políticas de acesso.</li>
+    <li><strong>Google Play</strong> — distribuição e atualização do aplicativo. O download e a
+      atualização são processados pela Google; o app apenas consulta a Play para saber se há uma
+      versão nova disponível.</li>
+    <li><strong>Autoridades públicas</strong> — somente quando houver obrigação legal ou ordem
+      judicial.</li>
+  </ul>
+  <p>
+    Também há o compartilhamento que <em>você</em> escolhe ao convidar alguém para o seu domínio,
+    descrito no item 2.4.
+  </p>
+
+  <h2>5. Onde os dados ficam armazenados</h2>
+  <p>
+    Os dados sincronizados são hospedados pelo Supabase em servidores localizados nos
+    <strong>Estados Unidos</strong> (região <em>us-west-2</em>). Isso significa
+    <strong>transferência internacional de dados</strong>, feita com base no art. 33 da LGPD e
+    amparada em cláusulas contratuais do provedor, que mantém padrões de segurança equivalentes
+    aos exigidos pela legislação brasileira.
+  </p>
+  <p>
+    A foto de perfil fica em um espaço de armazenamento <strong>privado</strong>: só a sua conta
+    consegue acessá-la. Quando o app precisa exibir a foto (por exemplo, depois de uma
+    reinstalação), ele gera um <strong>link temporário e assinado</strong>, válido por cerca de
+    uma hora, que não pode ser reutilizado por terceiros nem é indexado por buscadores.
+    Você pode trocar ou remover a foto quando quiser, e a troca apaga o arquivo anterior.
+  </p>
+
+  <h2>6. Segurança</h2>
+  <ul>
+    <li>Todo o tráfego entre o app e o servidor usa <strong>HTTPS/TLS</strong>.</li>
+    <li>O banco de dados aplica <strong>regras de acesso por linha (RLS)</strong>: cada conta só
+      alcança o próprio perfil e os dados do domínio a que tem acesso autorizado.</li>
+    <li>Senhas são armazenadas apenas como hash pelo serviço de autenticação.</li>
+    <li>O acesso ao painel administrativo do provedor é restrito e protegido por autenticação.</li>
+  </ul>
+  <p>
+    Nenhum sistema é 100% imune a incidentes. Se ocorrer um incidente de segurança relevante,
+    comunicaremos os titulares afetados e a ANPD, conforme a LGPD.
+  </p>
+
+  <h2 id="exclusao">7. Retenção e exclusão</h2>
+  <p>
+    Mantemos seus dados enquanto a sua conta existir e forem necessários para prestar o serviço.
+  </p>
+  <ul>
+    <li><strong>Excluir a conta no app</strong>: em <em>Perfil → Excluir conta</em>. A exclusão é
+      <strong>imediata e definitiva</strong> — não existe período de recuperação. Ela remove seu
+      perfil, sua foto e os dados do domínio do qual você é dono; se você participa do domínio de
+      outra pessoa, seu acesso é removido e sua conta volta para o seu próprio domínio.</li>
+    <li><strong>Cópias de segurança</strong>: o provedor de infraestrutura mantém backups
+      automáticos, que podem reter os dados por até <strong>30 dias</strong> adicionais, após os
+      quais são descartados.</li>
+    <li><strong>Desinstalar o app</strong> apaga os dados locais do aparelho; não apaga a conta
+      no servidor.</li>
+    <li><strong>Contas de convidados</strong>: o dono do domínio pode remover seu acesso, o que
+      apaga o vínculo entre vocês, mas não os dados que pertencem ao domínio.</li>
+  </ul>
+  <p>
+    Alguns registros podem ser mantidos por prazo maior apenas se houver obrigação legal de
+    guarda.
+  </p>
+
+  <h2>8. Seus direitos (LGPD)</h2>
+  <p>Você pode, a qualquer momento:</p>
+  <ul>
+    <li>confirmar se tratamos seus dados e <strong>acessar</strong> o que está cadastrado;</li>
+    <li><strong>corrigir</strong> nome, e-mail, foto e preferências diretamente no app;</li>
+    <li><strong>excluir</strong> a conta e os dados pelo próprio app (item 7);</li>
+    <li>solicitar <strong>portabilidade</strong> ou cópia dos dados que você cadastrou;</li>
+    <li>saber com quem compartilhamos (item 4) e as consequências da transferência
+      internacional (item 5);</li>
+    <li><strong>revogar o consentimento</strong> da foto de perfil e das notificações;</li>
+    <li>apresentar reclamação à <strong>ANPD</strong> (Autoridade Nacional de Proteção de Dados),
+      sem prejuízo de falar antes conosco.</li>
+  </ul>
+  <p>
+    Para os demais direitos (acesso, correção, portabilidade, informações sobre compartilhamento
+    e revogação de consentimento), envie um e-mail para
+    <a href="mailto:fernandomed93@gmail.com">fernandomed93@gmail.com</a> com o endereço cadastrado
+    no app. Podemos pedir uma confirmação de identidade para evitar acesso indevido. Você receberá
+    uma resposta em até <strong>15 dias</strong>.
+  </p>
+  <p>
+    A <strong>exclusão da conta</strong> não é feita por e-mail: ela acontece dentro do app, em
+    <em>Perfil → Excluir conta</em>, para ser imediata (item 7).
+  </p>
+
+  <h2>9. Crianças e adolescentes</h2>
+  <p>
+    O Finanças não é destinado a menores de 18 anos e não coletamos intencionalmente dados de
+    crianças ou adolescentes. Se identificarmos uma conta nessa situação, ela será encerrada e os
+    dados excluídos. Responsáveis podem entrar em contato pelo e-mail acima para solicitar a
+    remoção.
+  </p>
+
+  <h2>10. Notificações</h2>
+  <p>
+    Os lembretes e avisos do app são <strong>notificações locais</strong>, geradas no próprio
+    aparelho. Elas dependem da permissão de notificações do Android, que é opcional e pode ser
+    desativada nas configurações do sistema. Não usamos serviços de push de terceiros.
+  </p>
+
+  <h2>11. Alterações nesta política</h2>
+  <p>
+    Esta política pode ser atualizada quando o app mudar. A data de "última atualização" no topo
+    sempre indica a versão vigente. Mudanças relevantes serão comunicadas no app ou na ficha da
+    Play Store antes de passarem a valer. O uso do app depois da atualização significa que você
+    concorda com a nova versão.
+  </p>
+
+  <h2>12. Contato</h2>
+  <p>
+    Dúvidas, pedidos de acesso, correção ou exclusão:
+    <a href="mailto:fernandomed93@gmail.com">fernandomed93@gmail.com</a>.
+  </p>
+
+  <footer>
+    Política de Privacidade do aplicativo Finanças &middot; 19/11/2026 &middot;
+    <a href="#top">Voltar ao topo</a>
+  </footer>
+</main>
+</body>
+</html>
